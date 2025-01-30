@@ -1,6 +1,6 @@
 //Four-Digit 7 Segments Multiplexing using Arduino: Display time in HH:MM
-//CIRCUIT DIGEST
-#include <Wire.h>    //Library for SPI communication
+//CapSistema
+#include <Wire.h>     //Library for SPI communication 
 #include <DS3231.h>   //Library for RTC module 
 #define latchPin 5                       
 #define clockPin 6

@@ -1,0 +1,6 @@
+Button	KEYWORD1
+
+scanState	KEYWORD2
+filterAvarage	KEYWORD2
+setPinTime	KEYWORD2
+

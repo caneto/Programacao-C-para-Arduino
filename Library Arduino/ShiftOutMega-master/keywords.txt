@@ -1,0 +1,2 @@
+ShiftOutMega	KEYWORD1 
+shiftWrite	KEYWORD2

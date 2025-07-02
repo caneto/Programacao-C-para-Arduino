@@ -34,5 +34,5 @@ It also output's a 000.txt file, where all the original file names under each fo
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/caneto/Programacao-C-para-Arduino/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/caneto/Programacao-C-para-Arduino/Projetos/Arduino-Soundpod/LICENSE) file for details
 

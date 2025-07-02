@@ -1,7 +1,7 @@
 # Arduino-Soundpod
 An Arduino based MP3 player which uses a 1.3" OLED display along with DFPlayer.
 
-![Soundpod final build](https://github.com/Neutrino-1/Arduino-Soundpod/blob/master/Circuit%20diagram/SoundPod.png)
+![Soundpod final build](https://github.com/caneto/Programacao-C-para-Arduino/blob/main/Projetos/Arduino-Soundpod/Circuit%20diagram/SoundPod.png)
 
 ### Getting Started
 

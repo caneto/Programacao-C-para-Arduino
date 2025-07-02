@@ -30,13 +30,9 @@ To ransfer files to DFPlayer, the folders needs to be named 01,02.. and files ne
 This python script should help you in transfering the files and folders without manually renaming the files.
 It also output's a 000.txt file, where all the original file names under each folder is stored.
 
-![Soundpod final build](https://github.com/Neutrino-1/Arduino-Soundpod/blob/master/DFPlayer_Helper/DFplayer%20Helper.png)
+![Soundpod final build](https://github.com/caneto/Programacao-C-para-Arduino/blob/main/Projetos/Arduino-Soundpod/DFPlayer_Helper/DFplayer%20Helper.png)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Neutrino-1/Arduino-Soundpod/blob/master/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/caneto/Programacao-C-para-Arduino/blob/main/master/LICENSE) file for details
 
-## Acknowledgments
-
-* [Stefan Wagner](https://easyeda.com/wagiminator/attiny85-tinydfplayer-smd) Refered his code for file and folder queries.
-* [kaushikrao77](https://github.com/kaushikrao77) helped in the python script

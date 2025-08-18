@@ -17,9 +17,9 @@ float gyroXrate, gyroYrate;
 unsigned long timer;
 float dt;
 
-float altitude = 1200;   // Aktuelle Höhe
-float speed = 250;       // Feste Geschwindigkeit
-float heading = 90;      // Richtung (0° = Nord)
+float altitude = 1200;   // Current altitude
+float speed = 250;       // Fixed speed
+float heading = 90;      // Direction (0° = north)
 
 void showLoadingScreen() {
   for (int i = 0; i <= 100; i += 5) {
@@ -42,7 +42,7 @@ void showLoadingScreen() {
 }
 
 void setup() {
-  Wire.begin(12, 14);
+  Wire.begin();  //12, 14
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDRESS);
   display.clearDisplay();
   showLoadingScreen();
@@ -84,7 +84,7 @@ void drawAltSpeed() {
   display.print("k");
 }
 
-// --- Kompass ---
+// --- Compass ---
 void drawCompass(float heading) {
   int baseX = SCREEN_WIDTH / 2;
   int baseY = 61;
@@ -115,7 +115,7 @@ void drawCompass(float heading) {
   display.drawTriangle(baseX - 3, baseY + 1, baseX + 3, baseY + 1, baseX, baseY - 4, WHITE);
 }
 
-// --- Pitch & Roll simuliert Höhe und Kurs ---
+// --- Pitch & Roll simulates altitude and course ---
 void updateFlightPhysics() {
   // Pitch (angleY) beeinflusst Höhe
   altitude += angleY * 0.1;
@@ -143,12 +143,12 @@ void drawHorizon(float roll, float pitch) {
 
   display.drawLine(x1, y1, x2, y2, WHITE);
 
-  // Flugzeug Nase
+  // aircraft nose
   display.drawLine(centerX - 8, centerY, centerX + 8, centerY, WHITE);
   display.drawTriangle(centerX - 4, centerY + 6, centerX + 4, centerY + 6, centerX, centerY + 12, WHITE);
 }
 
-// --- HUD Rahmen ---
+// --- Hud frame ---
 void drawFrame() {
   display.drawRect(0, 12, 128, 50, WHITE);
 }
@@ -172,7 +172,7 @@ void loop() {
   angleX = 0.96 * angleX + 0.04 * accAngleX;
   angleY = 0.96 * angleY + 0.04 * accAngleY;
 
-  // Simuliertes Flugverhalten
+  // Simulated flight behavior
   updateFlightPhysics();
 
   display.clearDisplay();

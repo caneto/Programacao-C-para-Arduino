@@ -110,7 +110,7 @@ void drawCube() {
 }
 
 void setup() {
-  Wire.begin(12, 14);
+  Wire.begin(); // 12, 14
   display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDRESS);
   display.clearDisplay();
 
